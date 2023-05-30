@@ -1,12 +1,10 @@
-
-
+//Realised By NaroDK
 #include<iostream>
 #include<fstream>
 #include<string>
 
 int main()
 {
-
 	// A method to read the encrypted message from a file
 	std::ofstream outputFile; // Saves outputFile as a ofstream
 	std::ifstream inputFile; // Saves inputFile as an ifstream
@@ -14,7 +12,6 @@ int main()
 	//need to change to correct names. file 1 should print to output.txt and the rest print to output#.txt where # is the number of the encoded message
 	outputFile.open("output.txt"); // opens a new file output.txt
 	inputFile.open("message1_encoded.txt"); // reads the meesage1_encoded.txt file
-
 	char letterInFile; // creates a string variable for each letter in the file
 	int letters[26] = { 0 }; // creates an array called letter that has  a length of 26 and is all 0s
 	int orderedLetters[26];
